@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container m-5 p-5 mx-auto">
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">Check24 Blog</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Authors </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Articles</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- content -->
+            <main class="my-5">
+                <!-- login form -->
+                <section class="mx-auto w-25">
+                    <header>Login</header>
+
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"
+                                >Email address</label
+                            >
+                            <input
+                                name="email"
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                autofocus
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                            >
+                            <input
+                                name="password"
+                                type="password"
+                                class="form-control"
+                                id="exampleInputPassword1"
+                            />
+                            <div id="emailHelp" class="form-text">
+                                invalid user or password
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Submit
+                        </button>
+                    </form>
+                </section>
+
+                <br />
+                <br />
+
+                <!-- home -->
+                <section>
+                    <header
+                        class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                        <h1>Welcome Mark Zuckerberk</h1>
+                    </header>
+
+                    <div class="card">
+                        <div class="card-body p-5">
+                            This is the default home page
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+                <br />
+
+                <!-- authors index -->
+                <section>
+                    <header
+                        class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                        <h1>Authors</h1>
+                    </header>
+
+                    <div class="list-group">
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-3"
+                        >
+                            Mark Zuckerberk
+                            <span class="badge bg-secondary rounded-pill"
+                                >1 articles</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-3"
+                        >
+                            Jim Carry
+
+                            <span class="badge bg-secondary rounded-pill"
+                                >4 articles</span
+                            >
+                        </a>
+                    </div>
+                </section>
+
+                <br />
+                <br />
+
+                <!-- articles index -->
+                <section>
+                    <header
+                        class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                        <h1>Articles</h1>
+                        <a href="#" class="btn btn-sm btn-primary rounded-5"
+                            >Create Article</a
+                        >
+                    </header>
+
+                    <div class="list-group">
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action p-3"
+                        >
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">Laravel Crash Course</h5>
+                                <small>3 days ago</small>
+                            </div>
+
+                            <small class="text-muted">
+                                written by Mark Zuckerberk
+                            </small>
+                        </a>
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action p-3"
+                        >
+                            <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">JavaScript Mastery Course</h5>
+                                <small>1 week ago</small>
+                            </div>
+
+                            <small class="text-muted">
+                                written by Jim Carry
+                            </small>
+                        </a>
+                    </div>
+                </section>
+
+                <br />
+                <br />
+
+                <!-- article detail -->
+                <section>
+                    <header
+                        class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                        <h1>Article #id</h1>
+                        <div>
+                            <a href="#" class="btn btn-sm btn-primary rounded-5"
+                                >Edit</a
+                            >
+                            <a href="#" class="btn btn-sm btn-danger rounded-5"
+                                >Delete</a
+                            >
+                        </div>
+                    </header>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Laravel Crash Course</h3>
+
+                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                updated on 11/07/2023
+                            </h6>
+                            <br />
+
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Ea consequuntur dignissimos
+                                magnam error vero tempore numquam fugit incidunt
+                                cum excepturi accusantium non corporis expedita,
+                                quam perspiciatis sequi quaerat consequatur
+                                voluptates distinctio sed a doloremque ipsam?
+                                Corrupti, autem! Quibusdam officiis fuga et
+                                saepe, itaque quis ipsum natus delectus
+                                inventore est autem in impedit officia porro.
+                                Nesciunt exercitationem reiciendis pariatur
+                                repellendus, aspernatur eligendi facere
+                                similique, architecto ea labore quas qui quaerat
+                                officia itaque sit consectetur magni earum ipsa
+                                voluptatibus. Dolorem numquam rem ducimus ipsum
+                                vel. Excepturi nihil sapiente, dicta, at esse
+                                ratione praesentium accusamus amet animi sit
+                                consequatur illum voluptatum assumenda? Labore!
+                            </p>
+
+                            <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </section>
+
+                <br />
+                <br />
+
+                <!-- edit article -->
+                <section>
+                    <header
+                        class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                        <h1>Create / Edit Article #id</h1>
+                    </header>
+
+                    <div class="card">
+                        <form method="post">
+                            <div class="card-body">
+                                <input name="id" type="hidden" />
+
+                                <div class="mb-3">
+                                    <label
+                                        for="exampleFormControlInput1"
+                                        class="form-label"
+                                        >Title</label
+                                    >
+                                    <input
+                                        name="title"
+                                        type="text"
+                                        class="form-control"
+                                        id="exampleFormControlInput1"
+                                    />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label
+                                        for="exampleFormControlTextarea1"
+                                        class="form-label"
+                                        >Content</label
+                                    >
+                                    <textarea
+                                        name="content"
+                                        class="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        rows="3"
+                                    ></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    Save
+                                </button>
+                                <a href="#" class="btn btn-secondary">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
